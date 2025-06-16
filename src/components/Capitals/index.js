@@ -32,23 +32,23 @@ const countryAndCapitalsList = [
 
 // Write your code here
 
-class Capitals extends Component{
-  render(){
+class Capitals extends Component {
+  render() {
     return (
-      <div>
-        <div>
-          <h1> Countries And Capitals </h1>
-          <div>
-            <select>
+      <div className="app-container">
+        <div className="card-container">
+          <h1 className="heading"> Countries And Capitals </h1>
+          <div className="question-container">
+            <select className="capital-select">
               {countryAndCapitalsList.map(eachCapital => (
-                <option key={eachCapital.id}>
+                <option key={eachCapital.id} className="option">
                   {eachCapital.capitalDisplayText}
                 </option>
               ))}
             </select>
-            <p> is capital of which country? </p>
+            <p className="question"> is capital of which country? </p>
           </div>
-          <p> India </p>
+          <p className="country"> India </p>
         </div>
       </div>
     )
